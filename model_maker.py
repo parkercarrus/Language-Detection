@@ -1,9 +1,7 @@
-from telnetlib import X3PAD
 from numpy import array, loadtxt
 from keras.models import Sequential
 from keras.layers import Dense
-import csv
-from csv import writer
+
 
 dataset = loadtxt('bigdata.csv', delimiter=',')
 
@@ -26,7 +24,7 @@ model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy']
 history = model.fit(X, Y, epochs=12, batch_size=64, verbose = True)
 _, accuracy = model.evaluate(X,Y, verbose = False)
 
-model.save('ann_updated')
+model.save('ann_updated') #saves the trained network to a folder called 'ann_updated'
 
 
 
