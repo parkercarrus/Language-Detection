@@ -1,6 +1,6 @@
 # Language-Detection
 An artificial neural network built to distinguish between english and spanish text. 
-<br> This is my first project that incorporates a form of artificial intelligence.
+<br> This is my first project that incorporates machine learning. 
 
 To run the file, downlaod both 'predict.py' (user interface to make predictions) and the folder 'ann_updated' (the already trained neural network).
 <br> Ensure that you have proper TensorFlow libaries on your machine. <br>
